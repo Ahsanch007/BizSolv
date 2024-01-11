@@ -8,7 +8,10 @@ body {
     object-position: 50% 50%;
     height: 100vh;
 }
-
+.custom-container{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
 .header-section {
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
@@ -48,21 +51,72 @@ body {
     font-style: normal;
     line-height: 1.4em;
 }
+.menu-list ul li a::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #f5f0ea;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 0;
+}
+.menu-list ul li a:hover::after {
+    width: 100%;
+}
+
 
 .menu-list ul li .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 40px;
     left: 0;
     background-color: black;
     padding: 10px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .menu-list ul li:hover .dropdown-menu {
     display: block;
 }
 
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the dull effect */
+    display: none;
+}
+.menu-list ul li:hover .dropdown-menu li a::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #f5f0ea;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 0;
+}
+.menu-list ul li:hover .dropdown-menu li a:hover::after {
+    width: 100%;
+}
 .btn--border {
     padding: 1.4em 2.338em;
     background-color: #e7b441;
@@ -84,12 +138,13 @@ body {
 /* hero-section */
 
 .hero-section {
-    padding-top: 3.3vmax;
-    padding-bottom: 3.3vmax;
+
     width: 100%;
     box-sizing: content-box;
     position: relative;
     height: 100%;
+    display: flex;
+    align-items: center;
 
 
 }
@@ -109,6 +164,7 @@ body {
 
 .btn-2 {
     padding: 10px 50px;
+    width: 187px;
 }
 
 
@@ -420,42 +476,46 @@ body {
     .header-mob{
         padding: 6vw;
         display: flex;
-        width: 60%;
+        width: 65%;
         justify-content: space-between;
 
     }
     .mob-navigation {
-        overflow: hidden; /* Hide content that overflows the box */
+        overflow: hidden;
+        overflow-y: hidden; /* Prevent vertical scrolling */
         position: fixed;
-        width: 100%;
+        width: 0; /* Initially hide the mobile navigation */
         background: white;
         z-index: 999;
         top: 0;
-        height: 0; /* Initially hide the mobile navigation */
-        transition: height 0.5s ease-in-out; /* Add a transition for smooth animation */
+        right: 0; /* Align to the right side */
+        min-height: 100vh !important;
+        transition: width 0.5s ease-in-out; /* Use width for smooth animation */
     }
-
+    
     .mob-navigation.open {
-        height: 100vh; /* Display the mobile navigation with full height */
+        width: 100%; /* Display the mobile navigation with full width */
     }
+    
+    
     .mob-list ul {
         list-style: none;
-        padding: 0px;
-
-
+        padding: 0;
     }
-
+    
     .mob-list ul li {
-        margin: 20px 0px;
-    }
+        margin: 20px 0;
+        text-align: center;
 
+    }
+    
     .mob-list ul li a {
         color: black;
         font-size: 40px;
         text-decoration: none;
         font-weight: 400;
     }
-
+    
     .sign-in button {
         background-color: black;
         color: white;
@@ -484,10 +544,38 @@ body {
         justify-content: start;
         margin-bottom: -31px;
     }
+    .btn-2 {
+        width: 100%;
+    }
+    .sm-text{
+        text-align: center;
+    }
 }
 
 @media(min-width:992px){
     .mob-navigation{
         display: none;
+    }
+}
+@media(max-width:776px){
+    .mob-ver img {
+        width: 298px !important;
+        z-index: 999;
+        position: relative;
+    }
+    .card-content {
+        width: 329px !important;
+    }
+    .leading {
+        font-size: 26px !important;
+    }
+    .sqsrte-large {
+        font-size: 17px !important;
+    }
+}
+
+@media(min-width:1300){
+    .container{
+        max-width: 1240px !important;
     }
 }
