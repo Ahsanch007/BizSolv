@@ -52,7 +52,7 @@ body {
 }
 
 .menu-list ul li a {
-    color: white;
+    color: #00ADDA;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -87,13 +87,21 @@ body {
     top: 40px;
     left: 0;
     background-color: black;
+    color: white !important;
     padding: 10px;
     min-width: 250px;
 }
 
 .menu-list ul li:hover .dropdown-menu {
     display: block;
+    color: white !important;
+
 }
+.menu-list ul li:hover .dropdown-menu li a {
+    color: white !important;
+
+}
+
 
 
 .overlay {
@@ -102,7 +110,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the dull effect */
     display: none;
 }
 .menu-list ul li:hover .dropdown-menu li a::after{
@@ -126,7 +133,7 @@ body {
     width: 100%;
 }
 .btn--border {
-    padding: 1.4em 2.338em;
+    padding: .8em 2.338em;
     background-color: #00adda;
     color: white;
     font-weight: 500;
@@ -479,11 +486,16 @@ padding: 40px 0px;
 .mob-ver img{
     width: 100%;
 }
-
+.footer-links{
+    gap: 70px;
+}
 @media(max-width:992px) {
     .hero-main{
         background-image: url('../images/A8e4LqlArrsByAhUODvuRcqgbGh2xZWhiteBlueModernProfessionalBusinessConsultantBanner440x640px440x640px.png');
         min-height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .mob-hero{
         width: 172px;
@@ -561,7 +573,7 @@ padding: 40px 0px;
     :not(.header--menu-open) .burger-inner .top-bun,
     :not(.header--menu-open) .burger-inner .patty,
     :not(.header--menu-open) .burger-inner .bottom-bun {
-        background-color: #fff;
+        background-color: black;
     }
 
     .top-bun,
@@ -597,10 +609,9 @@ padding: 40px 0px;
     .for-mob {
         justify-content: space-between;
         width: 70%;
-        padding-top: 30px;
+        padding: 20px 0px;
     }
     .hero-section{
-        padding-top: 50px;
         display: flex;
         align-items: center;
     }
@@ -608,9 +619,18 @@ padding: 40px 0px;
     .header-mob{
         padding: 6vw;
         display: flex;
-        width: 67%;
+        width: 76%;
         justify-content: space-between;
 
+    }
+    .footer-links{
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .card-img {
+        width: 100%;
+        text-align: center;
+    
     }
     .mob-navigation {
         overflow: hidden;
@@ -643,7 +663,7 @@ padding: 40px 0px;
     }
     
     .mob-list ul li a {
-        color: black;
+        color: #00ADDA;
         font-size: 30px;
         text-decoration: none;
         font-weight: 400;
@@ -678,7 +698,7 @@ padding: 40px 0px;
         margin-bottom: -9px;
     }
     .btn-2 {
-        width: 250px;
+        width: 300px;
     }
     .sm-text{
         text-align: center;
