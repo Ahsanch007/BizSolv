@@ -14,7 +14,9 @@ body {
     box-shadow: inset 0 0 0 999999px rgba(0,0,0,0.5);
     width: 100%;
 }
-
+.mob-hero{
+    text-align: center;
+}
 .custom-container{
     padding-left: 3vw;
     padding-right: 3vw;
@@ -53,7 +55,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     line-height: 1.4em;
 }
@@ -342,6 +344,7 @@ padding: 40px 0px;
     color: white;
     margin: 0px;
     text-align: center;
+    
 }
 
 /* help BizSolv section */
@@ -359,13 +362,14 @@ padding: 40px 0px;
 
 /* Benefits section */
 .benefits-section{
-    background-image: url('../images/BAxIwBgrQ1LgIVuWDJkFsAefXSHfo5Highcompressed_1530535210.jpg');
+    /* background-image: url('../images/BAxIwBgrQ1LgIVuWDJkFsAefXSHfo5Highcompressed_1530535210.jpg'); */
     display: flex;
-    min-height: 80vh;
-    padding: 140px 0px;
+    /* min-height: 80vh; */
+    padding: 50px 0px;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    background-color: #eff0f1;
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 
 /* questions-section */
@@ -413,7 +417,7 @@ padding: 40px 0px;
 
 .footer-section {
     padding: 40px 0px;
-    background-color: black;
+    background-color: #00ADDA;
     color: white;
 }
 
@@ -477,6 +481,20 @@ padding: 40px 0px;
 }
 
 @media(max-width:992px) {
+    .hero-main{
+        background-image: url('../images/A8e4LqlArrsByAhUODvuRcqgbGh2xZWhiteBlueModernProfessionalBusinessConsultantBanner440x640px440x640px.png');
+        min-height: 50vh;
+    }
+    .mob-hero{
+        width: 172px;
+        text-align: start;
+    }
+    .info__title--single-column{
+        font-size: 26px;
+    }
+    .info__paragraph--markdown p{
+        font-size: 16px;
+    }
     .about-content{
         max-width: 100%;
         width: 100%;
@@ -543,7 +561,7 @@ padding: 40px 0px;
     :not(.header--menu-open) .burger-inner .top-bun,
     :not(.header--menu-open) .burger-inner .patty,
     :not(.header--menu-open) .burger-inner .bottom-bun {
-        background-color: #808080;
+        background-color: #fff;
     }
 
     .top-bun,
@@ -578,14 +596,13 @@ padding: 40px 0px;
 
     .for-mob {
         justify-content: space-between;
-        width: 65%;
+        width: 70%;
         padding-top: 30px;
     }
     .hero-section{
-        height: 78%;
+        padding-top: 50px;
         display: flex;
         align-items: center;
-        padding-top: 0px;
     }
 
     .header-mob{
