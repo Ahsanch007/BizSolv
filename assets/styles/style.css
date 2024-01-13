@@ -327,6 +327,10 @@ padding: 40px 0px;
     width: 42px;
 
 }
+.card-img i{
+    font-size: 30px;
+    color: #00adda;
+}
 
 .card-img img {}
 
@@ -335,7 +339,7 @@ padding: 40px 0px;
 }
 
 .card-text p {
-    color: black;
+    color: white;
     margin: 0px;
     text-align: center;
 }
@@ -439,12 +443,22 @@ padding: 40px 0px;
 }
 
 
+.policy-tabs a{
+    color: #e7b441;
+    font-weight: 500;
+}
 
+.social-icon a{
+    padding: 16px 18px;
+}
 
+.social-icon svg {
+    fill: #FFFFFF;
+}
 
-
-
-
+ .footer__social-media-link > svg {
+    fill: #FFFFFF;
+}
 
 ::-webkit-scrollbar {
     width: 0;
