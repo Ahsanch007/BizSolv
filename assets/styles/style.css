@@ -6,7 +6,7 @@ body {
   }
 .hero-main {
     position: relative;
-    background-image: url('../images/WhatsApp\ Image\ 2024-01-12\ at\ 22.29.21_50a4845f.jpg');
+    background-image: url('../images/7H8asFsjNYSAQHbKtpoMNWO8gLu1kxWhiteBlueModernProfessionalBusinessConsultantBanner1920x600px1600x600px.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,12 @@ body {
     z-index: 2;
     width: 100%;
 }
-
+.title-qul{
+    font-size: 46px;
+    letter-spacing: -0.88px;
+    margin-bottom: 40px;
+    color: #00ADDA;
+}
 .header-title-text a {
     color: white;
     text-decoration: none;
@@ -195,7 +200,7 @@ padding: 40px 0px;
 
 .btn-2 {
     padding: 10px 50px;
-    width: 200px;
+    /* width: 200px; */
 }
 
 
@@ -440,6 +445,7 @@ padding: 40px 0px;
     color: white;
     text-decoration: underline;
     font-size: 20px;
+    cursor: pointer;
 
 }
 
@@ -493,6 +499,11 @@ padding: 40px 0px;
     gap: 70px;
 }
 @media(max-width:992px) {
+    .about-section{
+        min-height: 90vh;
+        padding-top: 130px;
+        padding-bottom: 0px;
+    }
     .hero-main{
         background-image: url('../images/A8e4LqlArrsByAhUODvuRcqgbGh2xZWhiteBlueModernProfessionalBusinessConsultantBanner440x640px440x640px.png');
         min-height: 50vh;
@@ -500,15 +511,13 @@ padding: 40px 0px;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .mob-hero{
-        width: 172px;
-        text-align: start;
-    }
+  
     .info__title--single-column{
         font-size: 26px;
     }
     .info__paragraph--markdown p{
         font-size: 16px;
+        margin: 0px;
     }
     .about-content{
         max-width: 100%;
