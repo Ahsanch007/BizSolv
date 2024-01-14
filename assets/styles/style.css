@@ -356,11 +356,34 @@ padding: 40px 0px;
 }
 
 .card-text p {
-    color: white;
+    color: black;
     margin: 0px;
     text-align: center;
     
 }
+
+
+/* Area of specialization */
+
+.secialization{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-spec i{
+color: #00ADDA;
+font-size: 20px;
+}
+
+.content-spec p{
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+    margin: 0;
+}
+
+
 
 /* help BizSolv section */
 
