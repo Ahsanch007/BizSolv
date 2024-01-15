@@ -31,8 +31,37 @@ body {
     z-index: 2;
     width: 100%;
 }
+
+
+
+
+.button2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 300px;
+}
+.eoc-common {
+    font-size: 20px;
+    color: #000000;
+    word-break: break-all;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
 .title-qul{
-    font-size: 46px;
+    font-size: 35px;
     letter-spacing: -0.88px;
     margin-bottom: 40px;
     color: #00ADDA;
@@ -148,6 +177,16 @@ body {
     border: 3px solid #00adda;
 
 }
+.sign-in-btn {
+    padding: .8em 2.338em;
+    background-color: white;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+    border: 3px solid transparent;
+    color: #00ADDA;
+
+}
 .btn--border2 {
     padding: 1.4em 2.338em;
     border: 2px solid #00adda;
@@ -214,7 +253,7 @@ padding: 40px 0px;
 }
 
 .cards img {
-    width: 110px;
+    width: 60px;
     height: auto;
 }
 
@@ -378,8 +417,7 @@ font-size: 20px;
 
 .content-spec p{
     font-size: 20px;
-    color: black;
-    text-decoration: underline;
+    color: #00ADDA;
     margin: 0;
 }
 
@@ -520,6 +558,10 @@ font-size: 20px;
 }
 .footer-links{
     gap: 70px;
+}
+
+.mob-heading{
+    display: none;
 }
 @media(max-width:992px) {
     .about-section{
@@ -724,14 +766,17 @@ font-size: 20px;
 
     }
     .first-content{
-        display: flex;
-        justify-content: end;
-        margin-top: -8px;
+        /* display: flex;
+        justify-content: end; */
+        /* margin-top: -8px; */
+        padding-top: 15px;
     }
     .second-content{
-        display: flex;
+        /* display: flex;
         justify-content: start;
-        margin-bottom: -9px;
+        margin-bottom: -9px; */
+        padding-bottom: 15px;
+
     }
     .btn-2 {
         width: 300px;
@@ -742,6 +787,12 @@ font-size: 20px;
     .mob-center{
         justify-content: center !important;
     }
+    .deskt-heading{
+        display: none;
+    }
+    .mob-heading{
+        display: block;
+    }
 }
 
 @media(min-width:992px){
@@ -751,12 +802,13 @@ font-size: 20px;
 }
 @media(max-width:776px){
     .mob-ver img {
-        width: 298px !important;
+        /* width: 298px !important;
         z-index: 999;
-        position: relative;
+        position: relative; */
+        width: 100%;
     }
     .card-content {
-        width: 329px !important;
+        width: 100% !important;
     }
     .leading {
         font-size: 26px !important;
