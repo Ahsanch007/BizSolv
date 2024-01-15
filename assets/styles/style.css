@@ -776,6 +776,7 @@ font-size: 20px;
         justify-content: start;
         margin-bottom: -9px; */
         padding-bottom: 15px;
+        padding-top: 15px;
 
     }
     .btn-2 {
@@ -792,6 +793,9 @@ font-size: 20px;
     }
     .mob-heading{
         display: block;
+    }
+    .reverse{
+        flex-direction: column-reverse;
     }
 }
 
@@ -810,8 +814,8 @@ font-size: 20px;
     .card-content {
         width: 100% !important;
     }
-    .leading {
-        font-size: 26px !important;
+    .leading, .title-qul {
+        font-size: 22px !important;
     }
     .sqsrte-large {
         font-size: 17px !important;
